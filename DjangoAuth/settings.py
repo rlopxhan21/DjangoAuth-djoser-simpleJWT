@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'djoser',
     'drf_yasg',
+    'social_django',
 ]
 
 MIDDLEWARE = [
@@ -170,7 +171,7 @@ DJOSER = {
     "LOGIN_FIELD": "email",
     'PASSWORD_RESET_CONFIRM_URL': '#/password/reset/confirm/{uid}/{token}',
     'USERNAME_RESET_CONFIRM_URL': '#/username/reset/confirm/{uid}/{token}',
-    'ACTIVATION_URL': '#/activate/{uid}/{token}',
+    'ACTIVATION_URL': 'useraccount/activate/{uid}/{token}',
     'SEND_ACTIVATION_EMAIL': True,
     'SERIALIZERS': {
             'token_create': 'useraccount.serializers.CustomTokenCreateSerializer',
