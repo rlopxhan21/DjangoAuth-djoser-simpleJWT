@@ -19,6 +19,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+And also create a file .env in project folder and store SECRET_KEY.
+
 To run:
 
 ```
