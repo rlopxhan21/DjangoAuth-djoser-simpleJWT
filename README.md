@@ -28,3 +28,5 @@ python manage.py runserver
 ```
 
 ## API Documentation
+
+The API documentation can be found in http://localhost:8000/swagger/, http://localhost:8000/swagger.json/,  http://localhost:8000/redoc/
