@@ -8,4 +8,4 @@ class User(AbstractUser):
     AbstractUser._meta.get_field('email').null = False
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username']
+    REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
