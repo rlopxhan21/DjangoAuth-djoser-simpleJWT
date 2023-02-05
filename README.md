@@ -30,3 +30,6 @@ python manage.py runserver
 ## API Documentation
 
 The API documentation can be found in http://localhost:8000/swagger/, http://localhost:8000/swagger.json/,  http://localhost:8000/redoc/
+
+![image info](docs/api1.png "a title")
+![image info](docs/api2.png "a title")

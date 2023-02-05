@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'djoser',
     'drf_yasg',
-    # 'social_django',
+    'social_django',
 ]
 
 MIDDLEWARE = [
