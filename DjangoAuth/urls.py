@@ -1,9 +1,12 @@
 from django.contrib import admin
 from django.urls import path, include
 
+from rest_framework_simplejwt.views import TokenBlacklistView
+
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -26,8 +29,9 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.jwt')),
+    path('auth/token/blacklist/', TokenBlacklistView.as_view(), name='token_blacklist'),
 
-   path('auth/', include('djoser.social.urls')),
+   # path('auth/', include('djoser.social.urls')),
 
     path('swagger.json', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
